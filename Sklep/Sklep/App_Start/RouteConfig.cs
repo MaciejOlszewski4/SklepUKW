@@ -18,6 +18,12 @@ namespace Sklep
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "StaticSite",
+                url: "strony/{name}.html",
+                defaults: new { controller = "Home",  actionn = "StaticSite"}
+                );
         }
     }
 }

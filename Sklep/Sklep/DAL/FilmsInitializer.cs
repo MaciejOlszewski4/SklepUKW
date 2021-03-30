@@ -153,7 +153,7 @@ namespace Sklep.DAL
 
             foreach (var film in filmy)
             {
-                context.Filmy.Add(film);
+                context.Films.Add(film);
             }
             context.SaveChanges();
         }

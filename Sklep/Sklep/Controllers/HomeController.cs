@@ -26,5 +26,10 @@ namespace Sklep.Controllers
 
             return View();
         }
+
+        public ActionResult StaticSite(string name)
+        {
+            return View(name);
+        }
     }
 }
