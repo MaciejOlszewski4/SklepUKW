@@ -16,13 +16,13 @@ namespace Sklep
             routes.MapRoute(
                 name: "FilmsList",
                 url: "List/{categoryName}.html",
-                defaults: new { controller = "Films", actionn = "List" }
+                defaults: new { controller = "Films", action = "List" }
             );
 
                routes.MapRoute(
                     name: "StaticSite",
                     url: "info/{name}.html",
-                    defaults: new { controller = "Home", actionn = "StaticSite" }
+                    defaults: new { controller = "Home", action = "StaticSite" }
             );
 
             routes.MapRoute(
