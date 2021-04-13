@@ -14,16 +14,22 @@ namespace Sklep
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "FilmsList",
+                url: "List/{categoryName}.html",
+                defaults: new { controller = "Films", actionn = "List" }
+            );
+
+               routes.MapRoute(
+                    name: "StaticSite",
+                    url: "info/{name}.html",
+                    defaults: new { controller = "Home", actionn = "StaticSite" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-
-            routes.MapRoute(
-                name: "StaticSite",
-                url: "strony/{name}.html",
-                defaults: new { controller = "Home",  actionn = "StaticSite"}
-                );
         }
     }
 }

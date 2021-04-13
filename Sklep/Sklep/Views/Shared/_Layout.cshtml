@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model Sklep.ViewModels.indexViewModel
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -9,9 +11,10 @@
 <body>
     <header>
         <div id="Header">
-            <a href="komedia.html">Komedie</a>
-            <a href="horror.html">Horrory</a>
-            <a href="thriller.html">Thrillery</a>
+            @foreach (var category in Model.Categories)
+            {
+                <a href="@Url.Action("List", "Films", new { categoryName = category.Name })">@category.Name</a>
+            }
         </div>
     </header>
 

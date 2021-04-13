@@ -80,3 +80,6 @@ C:\Users\macie\source\repos\SklepUKW\Sklep\Sklep\bin\pl\System.Web.Mvc.resources
 C:\Users\macie\source\repos\SklepUKW\Sklep\Sklep\obj\Debug\Sklep.csproj.CopyComplete
 C:\Users\macie\source\repos\SklepUKW\Sklep\Sklep\obj\Debug\Sklep.dll
 C:\Users\macie\source\repos\SklepUKW\Sklep\Sklep\obj\Debug\Sklep.pdb
+C:\Users\macie\source\repos\SklepUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.InitialCreate.resources
+C:\Users\macie\source\repos\SklepUKW\Sklep\Sklep\obj\Debug\Sklep.csproj.GenerateResource.cache
+C:\Users\macie\source\repos\SklepUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.deleteLength.resources

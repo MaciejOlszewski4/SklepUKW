@@ -1,5 +1,6 @@
 ﻿using Sklep.DAL;
 using Sklep.Models;
+using Sklep.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,16 +16,20 @@ namespace Sklep.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            Category category = new Category()
-            {
-                CategoryId = 1,
-                Name = "Horror",
-                Desc = "Filmy od lat 16"
-            };
-            db.Categories.Add(category);
-            db.SaveChanges();
+            var categories = db.Categories.ToList();
+            indexViewModel ivm = new indexViewModel();
+            ivm.Categories = categories;
 
-            return View();
+            //Category category = new Category()
+            //{
+                //CategoryId = 1,
+                //Name = "Horror",
+                //Desc = "Filmy od lat 16"
+            //};
+            //db.Categories.Add(category);
+            //db.SaveChanges();
+
+            return View(ivm);
         }
 
         public ActionResult StaticSite(string name)
