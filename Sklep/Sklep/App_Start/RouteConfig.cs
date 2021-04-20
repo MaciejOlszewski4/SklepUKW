@@ -14,6 +14,12 @@ namespace Sklep
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "FilmsDetails",
+                url: "details_{id}.html",
+                defaults: new { controller = "Films", action = "List" }
+            );
+
+            routes.MapRoute(
                 name: "FilmsList",
                 url: "List/{categoryName}.html",
                 defaults: new { controller = "Films", action = "List" }

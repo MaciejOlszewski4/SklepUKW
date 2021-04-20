@@ -1,42 +1,82 @@
-﻿/*body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-/* Set padding to keep content from hitting the edges */
-/*.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-/*input,
-select,
-textarea {
-    max-width: 280px;
-}*/
-
-
-* {
-    box-sizing: border-box;
+﻿body {
+    background-color: chocolate;
     margin: 0;
-    padding: 0;
 }
 
-.header {
-    display: flex;
+#menu {
+    text-align: right;
+    height: 500px;
+    padding: 30px;
+    background-image: url("banner-film.png");
+    background-size: cover;
+    font-size: 50px;
+}
+
+a {
+    padding: 20px;
+    color: white;
     text-decoration: none;
-    background-color: yellow;
+    text-shadow: 5px 5px 10px black;
 }
 
-a:hover {
-    cursor: pointer;
+    a:hover {
+        text-shadow: none;
+    }
+
+table {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
 }
 
-main {
-    min-height: 300px;
+#stopka {
+    font-size: 20px;
+    text-align: right;
+    padding: 30px;
+    background-color: brown;
 }
 
-.footer {
-    background-color: blue;
+ul {
+    list-style-type: none;
+}
+
+#tableSzczegoly {
+    text-align: left;
+    font-size: 30px;
+    padding: 2%;
+}
+
+    #tableSzczegoly img {
+        width: 400px;
+    }
+
+#filmsFromCategory {
+    font-size: 20px;
+    background-color: brown;
+    width: 250px;
+    padding: 30px;
+}
+
+#obrazek {
+    text-align: center;
+}
+
+#filmsFromCategory ul li {
+    margin: 0 0 15px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+a img {
+    width: 200px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }

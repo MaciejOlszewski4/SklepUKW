@@ -114,7 +114,9 @@
     <Content Include="Content\GrafikiFilmy\SekretneOkno.JPG" />
     <Content Include="Content\GrafikiFilmy\Teksanska.jpg" />
     <Content Include="Content\GrafikiFilmy\TylkoNieMow.JPG" />
+    <Content Include="Content\index.html" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\szczegoly.html" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -163,6 +165,8 @@
     <Content Include="Views\Home\Metodyplatnosci.cshtml" />
     <Content Include="Views\Films\List.cshtml" />
     <Content Include="Views\Shared\_CategoriesMenu.cshtml" />
+    <Content Include="Views\Films\Details.cshtml" />
+    <Content Include="Views\Films\_FilmsFromCategory.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
