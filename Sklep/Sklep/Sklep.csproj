@@ -162,6 +162,7 @@
     <Content Include="Views\Home\Onas.cshtml" />
     <Content Include="Views\Home\Metodyplatnosci.cshtml" />
     <Content Include="Views\Films\List.cshtml" />
+    <Content Include="Views\Shared\_CategoriesMenu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

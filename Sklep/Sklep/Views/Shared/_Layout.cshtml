@@ -1,5 +1,4 @@
-﻿@model Sklep.ViewModels.indexViewModel
-
+﻿
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,12 +9,7 @@
 </head>
 <body>
     <header>
-        <div id="Header">
-            @foreach (var category in Model.Categories)
-            {
-                <a href="@Url.Action("List", "Films", new { categoryName = category.Name })">@category.Name</a>
-            }
-        </div>
+        @Html.Action("CategoriesMenu", "Films");
     </header>
 
     <main>

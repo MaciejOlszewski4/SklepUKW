@@ -1,0 +1,8 @@
+﻿@model Sklep.ViewModels.indexViewModel
+
+<div id="menu">
+    @foreach (var category in @Model)
+    {
+        <a href="@Url.Action("List", "Films", new { categoryName = category.Name })">@category.Name</a>
+    }
+</div>

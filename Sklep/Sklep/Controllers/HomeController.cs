@@ -16,9 +16,9 @@ namespace Sklep.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            var categories = db.Categories.ToList();
-            indexViewModel ivm = new indexViewModel();
-            ivm.Categories = categories;
+            //var categories = db.Categories.ToList();
+            //indexViewModel ivm = new indexViewModel();
+            //ivm.Categories = categories;
 
             //Category category = new Category()
             //{
@@ -29,7 +29,7 @@ namespace Sklep.Controllers
             //db.Categories.Add(category);
             //db.SaveChanges();
 
-            return View(ivm);
+            return View();
         }
 
         public ActionResult StaticSite(string name)
